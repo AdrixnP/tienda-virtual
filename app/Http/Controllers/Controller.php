@@ -8,5 +8,8 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, ValidatesRequests;
+    function index()
+    {
+        echo "Estamos en el indice de productos";
+    }
 }
